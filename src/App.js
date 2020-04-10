@@ -16,6 +16,9 @@ import {
     Jumbotron,
     Button
 } from 'reactstrap';
+import logos from './data/Logo';
+
+const description = "In 2019 I attended code school at Suncoast Developer's guild in St Petersburg, FL.  Since then I have been freelancing and working on personal projects.  Currently I am the web developer for the Randyland Museum."
 
 class App extends Component {
     constructor(props) {
@@ -55,11 +58,14 @@ class App extends Component {
                     </Collapse>
                 </Navbar>
                 <Jumbotron>
+                   
                     <Container>
                         <Row>
                             <Col>
                                 <h1>Welcome to my home page</h1>
                                 <p>
+                                    {description}
+                                    <br />
                                     <Button
                                         tag="a"
                                         color="success"
@@ -73,6 +79,11 @@ class App extends Component {
                             </Col>
                             <Col>
                                 <img src={baldGuy} alt="cartoon avatar of dante" />
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col>
+                                {logos.map((logo, i) => {return <img className="icon-img" key={i} src={logo.src} alt={logo.altText} />})}
                             </Col>
                         </Row>
                     </Container>
