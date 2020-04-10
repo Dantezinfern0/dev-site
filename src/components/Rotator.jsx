@@ -38,11 +38,9 @@ const Rotator = (props) => {
         onExited={() => setAnimating(false)}
         key={i}
       >
-          <div className="icon-container">
             <NavLink href={proj.url}>
             <img className="project-images" src={proj.imgSrc} alt={proj.altText} />
             </NavLink>
-          </div>
           <CarouselCaption className="description-background" captionHeader={proj.desc} />
       </CarouselItem>
     );

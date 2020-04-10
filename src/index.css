@@ -16,10 +16,6 @@ body {
   height: 100px;
   width: 100px;
 }
-.icon-container {
-  display:flex;
-  justify-content: center;
-}
 .project-images {
   height: 100%;
   width: 100%;
@@ -27,4 +23,7 @@ body {
 .description-background {
  background-color: black;
  opacity: 0.75;
+}
+.small-margin {
+  margin: 0.5rem;
 }

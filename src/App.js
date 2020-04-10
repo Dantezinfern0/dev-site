@@ -63,11 +63,12 @@ class App extends Component {
                     <Container>
                         <Row>
                             <Col>
-                                <h1>Welcome to my home page</h1>
+                                <h1>Welcome!</h1>
                                 <p>
                                     {description}
                                     <br />
                                     <Button
+                                        className="small-margin"
                                         tag="a"
                                         color="success"
                                         size="large"
@@ -77,14 +78,10 @@ class App extends Component {
                                         View my CV
                                     </Button>
                                 </p>
+                                {logos.map((logo, i) => {return <img className="icon-img" key={i} src={logo.src} alt={logo.altText} />})}
                             </Col>
                             <Col>
                                 <img src={baldGuy} alt="cartoon avatar of dante" />
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col>
-                                {logos.map((logo, i) => {return <img className="icon-img" key={i} src={logo.src} alt={logo.altText} />})}
                             </Col>
                         </Row>
                         <Row>
