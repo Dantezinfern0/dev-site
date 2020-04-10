@@ -18,6 +18,7 @@ import {
 } from 'reactstrap';
 import logos from './data/Logo';
 import Rotator from './components/Rotator'
+import Footer from './components/Footer'
 
 const description = "In 2019 I attended code school at Suncoast Developer's guild in St Petersburg, FL.  Since then I have been freelancing and working on personal projects.  Currently I am the web developer for the Randyland Museum."
 
@@ -92,6 +93,7 @@ class App extends Component {
                         </Row>
                     </Container>
                 </Jumbotron>
+                    <Footer />
             </div>
         );
     }
