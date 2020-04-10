@@ -1,5 +1,7 @@
 
 import React, { Component } from 'react';
+import resume from './images/DanteHaraszResume.pdf'
+import baldGuy from './images/danteavatar.png'
 import {
     Collapse,
     Navbar,
@@ -33,15 +35,21 @@ class App extends Component {
         return (
             <div>
                 <Navbar color="inverse" light expand="md">
-                    <NavbarBrand href="/">Web Development</NavbarBrand>
+                    <NavbarBrand href="/">Dante Harasz - Web Developer</NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink href="/components/">Components</NavLink>
+                                <NavLink href="https://www.linkedin.com/in/k-dante-harasz">LinkedIn</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="https://github.com/reactstrap/reactstrap">Github</NavLink>
+                                <NavLink href="https://github.com/Dantezinfern0">Github</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="https://randy.land">Randyland</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="https://visualvitamin.shop">VisualVitamin.shop</NavLink>
                             </NavItem>
                         </Nav>
                     </Collapse>
@@ -50,18 +58,21 @@ class App extends Component {
                     <Container>
                         <Row>
                             <Col>
-                                <h1>Welcome to React</h1>
+                                <h1>Welcome to my home page</h1>
                                 <p>
                                     <Button
                                         tag="a"
                                         color="success"
                                         size="large"
-                                        href="http://reactstrap.github.io"
+                                        href={resume}
                                         target="_blank"
                                     >
-                                        View Reactstrap Docs
+                                        View my CV
                                     </Button>
                                 </p>
+                            </Col>
+                            <Col>
+                                <img src={baldGuy} alt="cartoon avatar of dante" />
                             </Col>
                         </Row>
                     </Container>
