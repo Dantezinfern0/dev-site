@@ -17,6 +17,7 @@ import {
     Button
 } from 'reactstrap';
 import logos from './data/Logo';
+import Rotator from './components/Rotator'
 
 const description = "In 2019 I attended code school at Suncoast Developer's guild in St Petersburg, FL.  Since then I have been freelancing and working on personal projects.  Currently I am the web developer for the Randyland Museum."
 
@@ -85,6 +86,12 @@ class App extends Component {
                             <Col>
                                 {logos.map((logo, i) => {return <img className="icon-img" key={i} src={logo.src} alt={logo.altText} />})}
                             </Col>
+                        </Row>
+                        <Row>
+                            <h1>
+                                Projects
+                            </h1>
+                            <Rotator />
                         </Row>
                     </Container>
                 </Jumbotron>
