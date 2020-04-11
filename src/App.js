@@ -64,7 +64,7 @@ class App extends Component {
                     <Container>
                         <Row>
                             <Col>
-                                <h1>Welcome!</h1>
+                                <h1>Aloha!</h1>
                                 <p>
                                     {description}
                                     <br />
