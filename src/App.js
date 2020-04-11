@@ -94,6 +94,7 @@ class App extends Component {
                                 <img src={baldGuy} alt="cartoon avatar of dante" />
                             </Col>
                         </Row>
+                        <hr />
                         <Row>
                             <h1>
                                 Projects
