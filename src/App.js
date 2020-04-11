@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import resume from './images/DanteHaraszResume.pdf'
+import resume from './images/DanteHaraszResume.jpg'
 import baldGuy from './images/danteavatar.png'
 import {
     Collapse,
