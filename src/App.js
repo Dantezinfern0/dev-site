@@ -60,7 +60,6 @@ class App extends Component {
                     </Collapse>
                 </Navbar>
                 <Jumbotron>
-                   
                     <Container>
                         <Row>
                             <Col>
@@ -103,7 +102,7 @@ class App extends Component {
                         </Row>
                     </Container>
                 </Jumbotron>
-                    <Footer />
+                <Footer />
             </div>
         );
     }
