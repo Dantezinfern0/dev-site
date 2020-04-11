@@ -78,6 +78,16 @@ class App extends Component {
                                     >
                                         View my CV
                                     </Button>
+                                    <Button
+                                        className="small-margin"
+                                        tag="a"
+                                        color="success"
+                                        size="large"
+                                        href="mailto:danteharasz@gmail.com?Subject=Web%20Development%20Work%20Needed"
+                                        target="_top"
+                                    >
+                                        Email Me
+                                    </Button>
                                 </p>
                                 {logos.map((logo, i) => {return <img className="icon-img" key={i} src={logo.src} alt={logo.altText} />})}
                             </Col>
