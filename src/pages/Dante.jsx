@@ -18,7 +18,7 @@ import Github from '../components/Github'
 const description = "In 2019 Dante attended code school at Suncoast Developer's guild in St Petersburg, FL.  Since then he has been freelancing and working on personal projects.  Currently he is the web developer for the Randyland Museum."
 
 const Dante = () => {
-    return <div>
+    return <>
                 <Jumbotron>
                     <Container>
                         <Row>
@@ -47,7 +47,7 @@ const Dante = () => {
                         </Row>
                     </Container>
                 </Jumbotron>
-            </div>
+            </>
 }
 
 export default Dante

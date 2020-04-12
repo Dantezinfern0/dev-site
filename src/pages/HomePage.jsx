@@ -1,8 +1,11 @@
 import React from 'react'
+import Dante from '../pages/Dante'
+import Diana from '../pages/Diana'
 
 const HomePage = () => {
     return <div>
-        home page
+        <Diana />
+        <Dante />
     </div>
 }
 
