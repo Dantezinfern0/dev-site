@@ -1,10 +1,10 @@
 import React from 'react'
 import Dante from '../pages/Dante'
-import Diana from '../pages/Diana'
+// import Diana from '../pages/Diana'
 
 const HomePage = () => {
     return <div>
-        <Diana />
+        {/* <Diana /> */}
         <Dante />
     </div>
 }
