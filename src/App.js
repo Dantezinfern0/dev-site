@@ -5,6 +5,8 @@ import HomePage from './pages/HomePage'
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Dante from './pages/Dante'
 import Diana from './pages/Diana'
+import Rotator from './components/Rotator'
+
 class App extends Component {
     render() {
         return (
@@ -14,6 +16,7 @@ class App extends Component {
                         <Route exact path="/" component={HomePage}></Route>
                         <Route exact path="/dante" component={Dante}></Route>
                         <Route exact path="/diana" component={Diana}></Route>
+                        <Route exact path="/projects" component={Rotator}></Route>
                     </Switch>
                 </BrowserRouter>
                 <Footer />
