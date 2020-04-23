@@ -25,7 +25,6 @@ const Main = () => {
                     <li>Creative direction</li>
                     <li>Shopify</li>
                     <li>Logos</li>
-                    <li>Cat Poop</li>
                 </ul>
             </Col>
         </Container>
