@@ -11,7 +11,7 @@ const Main = () => {
     <Jumbotron>
         <Container>
             <Col>
-                <h1>Intro about DankDevTeam</h1>
+                <h1>About DankDevTeam</h1>
                 <p>We are a team focused on making your business better.</p>
                 <h2>List of our services</h2>
                 <ul>
