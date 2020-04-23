@@ -6,7 +6,6 @@ import {
     Jumbotron
 } from 'reactstrap';
 import logos from '../data/Logo';
-import Rotator from '../components/Rotator'
 import baldGuy from '../images/danteavatar.png'
 import EmailMe from '../components/EmailMe'
 import CV from '../components/CV'
@@ -37,13 +36,6 @@ const Dante = () => {
                             <Col>
                                 <img src={baldGuy} alt="cartoon avatar of dante" />
                             </Col>
-                        </Row>
-                        <hr />
-                        <Row>
-                            <h1>
-                                Projects
-                            </h1>
-                            <Rotator />
                         </Row>
                     </Container>
                 </Jumbotron>

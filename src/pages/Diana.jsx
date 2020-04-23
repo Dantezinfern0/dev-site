@@ -24,7 +24,8 @@ const Diana = () => {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Recusandae libero labore excepturi. Doloremque sint, natus 
                     placeat ullam dolor at dicta quo culpa tempora eveniet quod 
-                    quidem cumque ea voluptatum neque! 
+                    quidem cumque ea voluptatum neque!
+                    <img href="http://projectchangemaryland.org/wp-content/uploads/2016/09/presentation.design.jpg" alt="something" /> 
                 </Col>
             </Row>
         </Container>

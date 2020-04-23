@@ -10,7 +10,7 @@ const EmailMe = () => {
                 size="large"
                 href="mailto:danteharasz@gmail.com?Subject=Web%20Development%20Work%20Needed"
                 target="_top">
-            Email Me
+            Email Us
         </Button>
     </>
 }

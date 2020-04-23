@@ -41,7 +41,7 @@ const Rotator = (props) => {
             <NavLink href={proj.url}>
             <img className="project-images" src={proj.imgSrc} alt={proj.altText} />
             </NavLink>
-          <CarouselCaption className="description-background" captionHeader={proj.desc} />
+          <CarouselCaption className="description-background" captionText={proj.desc} />
       </CarouselItem>
     );
   });
