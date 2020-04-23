@@ -7,7 +7,6 @@ import {
 } from 'reactstrap';
 import logos from '../data/Logo';
 import baldGuy from '../images/danteavatar.png'
-import EmailMe from '../components/EmailMe'
 import CV from '../components/CV'
 import LinkedIn from '../components/LinkedIn'
 import Github from '../components/Github'
@@ -29,7 +28,6 @@ const Dante = () => {
                                     <LinkedIn />
                                     <Github  />
                                     <CV />
-                                    <EmailMe />
                                 </p>
                                 {logos.map((logo, i) => {return <img className="icon-img" key={i} src={logo.src} alt={logo.altText} />})}
                             </Col>

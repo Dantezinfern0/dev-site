@@ -12,11 +12,17 @@ const Main = () => {
         <Container>
             <Col>
                 <h1>Intro about DankDevTeam</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt sint dolorum voluptates incidunt neque, delectus quam odit aliquid dicta laboriosam modi. Cumque harum enim labore omnis, temporibus nam repudiandae architecto?</p>
+                <p>We are a team focused on making your business better.</p>
                 <h2>List of our services</h2>
                 <ul>
-                    <li>SEO</li>
-                    <li>Design</li>
+                    <li>Web development</li>
+                    <li>Web design</li>
+                    <li>Brand image</li>
+                    <li>eCommerce stores</li>
+                    <li>Content creation</li>
+                    <li>Marketing strategy</li>
+                    <li>SEO & analytics</li>
+                    <li>Creative direction</li>
                     <li>Shopify</li>
                     <li>Logos</li>
                     <li>Cat Poop</li>

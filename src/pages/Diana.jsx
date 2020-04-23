@@ -6,6 +6,7 @@ import {
     Col,
     Jumbotron
 } from 'reactstrap';
+import EmailMe from '../components/EmailMe'
 
 
 
@@ -18,14 +19,12 @@ const Diana = () => {
                     <h1>Hello, I'm Diana</h1>
                     <img src={avatar} alt="Diana's avatar" />
                     <p>Diana is a master designer,<br />
-                    she has an eye for what's cool</p>
+                    she has an eye for what's cool.</p>
                 </Col>
-                <Col>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Recusandae libero labore excepturi. Doloremque sint, natus 
-                    placeat ullam dolor at dicta quo culpa tempora eveniet quod 
-                    quidem cumque ea voluptatum neque!
-                    <img href="http://projectchangemaryland.org/wp-content/uploads/2016/09/presentation.design.jpg" alt="something" /> 
+                <Col>Diana has worked for Armory Print works and was a virtual assistant for many years.
+                    She is excellent at Design, Social Media, and making logos.  She has helped many businesses to grow
+                    their customer base, manage inventory, design products, web sites, branding, you name it.
+                    <EmailMe />
                 </Col>
             </Row>
         </Container>
