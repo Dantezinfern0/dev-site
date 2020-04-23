@@ -10,6 +10,7 @@ import baldGuy from '../images/danteavatar.png'
 import CV from '../components/CV'
 import LinkedIn from '../components/LinkedIn'
 import Github from '../components/Github'
+import EmailMe from '../components/EmailMe'
 
 
 
@@ -28,6 +29,7 @@ const Dante = () => {
                                     <LinkedIn />
                                     <Github  />
                                     <CV />
+                                    <EmailMe />
                                 </p>
                                 {logos.map((logo, i) => {return <img className="icon-img" key={i} src={logo.src} alt={logo.altText} />})}
                             </Col>
