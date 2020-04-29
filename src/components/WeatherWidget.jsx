@@ -89,28 +89,29 @@ const WeatherWidget = () => {
   useEffect(() => {
     getWeather()
   },[])
+  
   return <div className="center-flex" 
   style={{backgroundImage: photo()}}>
     <section>
     <h1>
       Current Weather
-      </h1>
-      <p>Pittsburgh, PA</p>
-      <h2>
-        {weather.currentTemp}
-        </h2>
-        <h3>
-          Conditions: {weather.currentDescription}
-        </h3>
-        <h4>
-          Wind speed: {weather.currentWindSpeed}
-        </h4>
-        <h4>
-          Wind direction: {direction()}@{weather.currentWindDir}
-        </h4>
-        <img id="indicator" alt="#" src={photo().slice(4,-1)} />
-        </section>
-        <p>Widget by DankDevTeam</p>
-    </div>
+    </h1>
+    <p>Pittsburgh, PA</p>
+    <h2>
+      {weather.currentTemp}
+    </h2>
+    <h3>
+      Conditions: {weather.currentDescription}
+    </h3>
+    <h4>
+      Wind speed: {weather.currentWindSpeed}
+    </h4>
+    <h4>
+      Wind direction: {direction()}@{weather.currentWindDir}
+    </h4>
+    <img id="indicator" alt="#" src={photo().slice(4,-1)} />
+  </section>
+  <p>Widget by DankDevTeam</p>
+</div>
 }
 export default WeatherWidget
