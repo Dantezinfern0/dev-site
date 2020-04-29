@@ -105,7 +105,7 @@ const WeatherWidget = () => {
           Wind speed: {weather.currentWindSpeed}
         </h4>
         <h4>
-          Wind direction: {direction()}-{weather.currentWindDir}
+          Wind direction: {direction()}@{weather.currentWindDir}
         </h4>
         <img id="indicator" alt="#" src={photo().slice(4,-1)} />
         </section>
