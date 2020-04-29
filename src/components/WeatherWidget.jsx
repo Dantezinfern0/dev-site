@@ -93,8 +93,9 @@ const WeatherWidget = () => {
   style={{backgroundImage: photo()}}>
     <section>
     <h1>
-      Current Weather In Pittsburgh
+      Current Weather
       </h1>
+      <p>Pittsburgh, PA</p>
       <h2>
         {weather.currentTemp}
         </h2>
