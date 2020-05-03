@@ -30,6 +30,7 @@ const WeatherWidget = () => {
         setWeather({
           currentTemp: convert(resp.current.temp),
           currentDescription: resp.current.weather[0].main,
+          currentMessage: toTitleCase(resp.current.weather[0].description),
           currentWindSpeed: resp.current.wind_speed + 'mph',
           currentWindDir: resp.current.wind_deg + '°',
           currentWindDeg: resp.current.wind_deg,
@@ -47,6 +48,14 @@ const WeatherWidget = () => {
     f += 32
     return Math.round(f) + '°F'
   }
+  function toTitleCase(str) {
+    return str.replace(
+        /\w\S*/g,
+        function(txt) {
+            return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+        }
+    );
+}
   const direction = () => {
     let deg = weather.currentWindDeg
     if (338 < deg < 24) {
@@ -101,13 +110,13 @@ const WeatherWidget = () => {
       {weather.currentTemp}
     </h2>
     <h3>
-      Conditions: {weather.currentDescription}
+      Conditions: {weather.currentMessage}
     </h3>
     <h4>
       Wind speed: {weather.currentWindSpeed}
     </h4>
     <h4>
-      Wind direction: {direction()}@{weather.currentWindDir}
+      Wind direction: {direction()} @ {weather.currentWindDir}
     </h4>
     <img id="indicator" alt="#" src={photo().slice(4,-1)} />
   </section>
