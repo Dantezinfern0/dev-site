@@ -1,6 +1,6 @@
 import React from 'react'
 import Dante from '../pages/Dante'
-import Diana from '../pages/Diana'
+// import Diana from '../pages/Diana'
 import Main from '../components/Main'
 import Rotator from '../components/Rotator'
 import WeatherWidget from '../components/WeatherWidget'
@@ -15,7 +15,7 @@ const HomePage = () => {
     return <div>
         <Main />
         <Dante />
-        <Diana />
+        {/* <Diana /> */}
         <WeatherWidget />
         <Jumbotron>
             <Container>
