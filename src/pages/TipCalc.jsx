@@ -48,11 +48,11 @@ const TipCalc = () => {
                     <Col>
                     <label for="userInput">Input check total here</label>
                     <input onChange={e => setCheck(e.target.value)} 
-                    type="number" 
-                    size="10" 
-                    id="checkAmount" 
-                    name="userInput"
-                    placeholder="check amount.."
+                        type="number" 
+                        size="10" 
+                        id="checkAmount" 
+                        name="userInput"
+                        placeholder="check amount.."
                      />
                     <Button id="tipButton"onClick={() => calc()}>Calculate</Button>
                     </Col>
