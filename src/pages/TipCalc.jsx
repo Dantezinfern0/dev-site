@@ -26,6 +26,9 @@ const TipCalc = () => {
         setTotal10((check * 1.1).toFixed(2))
         setIsReady(true)
     }
+    function commas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
     useEffect(() => {
         const input = document.getElementById("checkAmount");
         input.addEventListener("keyup", function(event) {
@@ -58,18 +61,18 @@ const TipCalc = () => {
                     </Col>
                     <Col>
                         <h4>20%</h4>
-                        <p>${isReady ? twenty : "0.00"}</p>
-                        <p>Total:${isReady ? total20 : "0.00"}</p>
+                        <p>${isReady ? commas(twenty) : "0.00"}</p>
+                        <p>Total:${isReady ? commas(total20) : "0.00"}</p>
                     </Col>
                     <Col>
                         <h4>15%</h4>
-                        <p>${isReady ? fifteen : "0.00"}</p>
-                        <p>Total:${isReady ? total15 : "0.00"}</p>
+                        <p>${isReady ? commas(fifteen) : "0.00"}</p>
+                        <p>Total:${isReady ? commas(total15) : "0.00"}</p>
                     </Col>
                     <Col>
                         <h4>10%</h4>
-                        <p>${isReady ? ten : "0.00"}</p>
-                        <p>Total:${isReady ? total10 : "0.00"}</p>
+                        <p>${isReady ? commas(ten) : "0.00"}</p>
+                        <p>Total:${isReady ? commas(total10) : "0.00"}</p>
                     </Col>
                 </Row>
             </Col>
