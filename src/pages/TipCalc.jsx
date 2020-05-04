@@ -15,6 +15,7 @@ const TipCalc = () => {
     const [total20, setTotal20] = useState(0)
     const [total15, setTotal15] = useState(0)
     const [total10, setTotal10] = useState(0)
+    const [isReady, setIsReady] = useState(false)
 
     const calc = () => {
         setTwenty((check * 0.2).toFixed(2))
@@ -23,6 +24,7 @@ const TipCalc = () => {
         setTotal20((check * 1.2).toFixed(2))
         setTotal15((check * 1.15).toFixed(2))
         setTotal10((check * 1.1).toFixed(2))
+        setIsReady(true)
     }
     useEffect(() => {
         const input = document.getElementById("checkAmount");
@@ -56,18 +58,18 @@ const TipCalc = () => {
                     </Col>
                     <Col>
                         <h4>20%</h4>
-                        <p>${twenty > 0 ? twenty : "0.00"}</p>
-                        <p>Total:${total15 > 0 ? total20 : "0.00"}</p>
+                        <p>${isReady ? twenty : "0.00"}</p>
+                        <p>Total:${isReady ? total20 : "0.00"}</p>
                     </Col>
                     <Col>
                         <h4>15%</h4>
-                        <p>${fifteen > 0 ? fifteen : "0.00"}</p>
-                        <p>Total:${total15 > 0 ? total15 : "0.00"}</p>
+                        <p>${isReady ? fifteen : "0.00"}</p>
+                        <p>Total:${isReady ? total15 : "0.00"}</p>
                     </Col>
                     <Col>
                         <h4>10%</h4>
-                        <p>${ten > 0 ? ten : "0.00"}</p>
-                        <p>Total:${total10 > 0 ? total10 : "0.00"}</p>
+                        <p>${isReady ? ten : "0.00"}</p>
+                        <p>Total:${isReady ? total10 : "0.00"}</p>
                     </Col>
                 </Row>
             </Col>
