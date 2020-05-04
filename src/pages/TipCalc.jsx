@@ -26,7 +26,7 @@ const TipCalc = () => {
         setTotal10((check * 1.1).toFixed(2))
         setIsReady(true)
     }
-    function commas(x) {
+    const commas = x => {
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
     useEffect(() => {
