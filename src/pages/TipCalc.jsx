@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import {
     Container,
     Row,
@@ -24,6 +24,18 @@ const TipCalc = () => {
         setTotal15((check * 1.15).toFixed(2))
         setTotal10((check * 1.1).toFixed(2))
     }
+    useEffect(() => {
+        const input = document.getElementById("checkAmount");
+        input.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("tipButton").click();
+    }
+        return () => {
+            document.removeEventListener("keyup", input);
+          };
+},[]);
+    })
     return <Jumbotron>
         <Container>
             <Col>
@@ -40,7 +52,7 @@ const TipCalc = () => {
                     name="userInput"
                     placeholder="check amount.."
                      />
-                    <Button onClick={() => calc()}>Calculate</Button>
+                    <Button id="tipButton"onClick={() => calc()}>Calculate</Button>
                     </Col>
                     <Col>
                         <h4>20%</h4>
