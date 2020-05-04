@@ -38,6 +38,12 @@ import {
                             <NavItem>
                                 <NavLink href="https://visualvitamin.shop">VisualVitamin.shop</NavLink>
                             </NavItem>
+                            <NavItem>
+                                <NavLink href="/weather">Weather</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="/tipcalc">TipCalc</NavLink>
+                            </NavItem>
                         </Nav>
                     </Collapse>
                 </Navbar>

@@ -3,7 +3,7 @@ import Dante from '../pages/Dante'
 // import Diana from '../pages/Diana'
 import Main from '../components/Main'
 import Rotator from '../components/Rotator'
-import WeatherWidget from '../components/WeatherWidget'
+import WeatherWidget from '../pages/WeatherWidget'
 import {
     Container,
     Row,

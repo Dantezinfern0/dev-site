@@ -5,7 +5,7 @@ import HomePage from './pages/HomePage'
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Dante from './pages/Dante'
 // import Diana from './pages/Diana'
-import WeatherWidget from './components/WeatherWidget'
+import WeatherWidget from './pages/WeatherWidget'
 import Rotator from './components/Rotator'
 import TipCalc from './pages/TipCalc'
 
