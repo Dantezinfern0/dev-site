@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import Moment from 'react-moment'
 import '../styles/widget.css'
 
 // data for fetch url
@@ -8,6 +9,7 @@ const pitts = {
   lat : 40.44,
   lon : -79.99
 }
+const part = "hourly"
 // data for dynamic background switch
 const indicate = {
   sun: "https://cdn.pixabay.com/photo/2013/07/13/10/23/sun-157126_1280.png",
@@ -23,7 +25,7 @@ const WeatherWidget = () => {
   const  [weather,setWeather ]= useState({})
 
   const getWeather = async () => {
-    const get = await fetch(`${url}?lat=${pitts.lat}&lon=${pitts.lon}&appid=${key}`);
+    const get = await fetch(`${url}?lat=${pitts.lat}&lon=${pitts.lon}&exclude=${part}&appid=${key}`);
     get
       .json()
       .then(resp => {
@@ -36,6 +38,8 @@ const WeatherWidget = () => {
           currentWindDeg: resp.current.wind_deg,
           dailyMax: convert(resp.daily[0].temp.max),
           dailyMin: convert(resp.daily[0].temp.min),
+          sunrise: resp.current.sunrise,
+          sunset: resp.current.sunset
         })
         console.log(resp)
       })
@@ -109,10 +113,17 @@ const WeatherWidget = () => {
     </h1>
     <p>Pittsburgh, PA</p>
     <h2>
-      {weather.currentTemp}
+      Current: {weather.currentTemp}
     </h2>
     <h3>
       Conditions: {weather.currentMessage}
+    </h3>
+    <h3>High: {weather.dailyMax}</h3>
+    <h3>Low: {weather.dailyMin}</h3>
+    <h3>{'Sunrise: '}
+    <Moment unix format="HH:mm">{weather.sunrise}</Moment></h3>
+    <h3>{'Sunset: '}
+    <Moment unix format="HH:mm">{weather.sunset}</Moment>
     </h3>
     <h4>
       Wind speed: {weather.currentWindSpeed}
@@ -120,8 +131,7 @@ const WeatherWidget = () => {
     <h4>
       Wind direction: {direction()} @ {weather.currentWindDir}
     </h4>
-    <h3>High: {weather.dailyMax}</h3>
-    <h3>Low: {weather.dailyMin}</h3>
+    <br />
     <img id="indicator" alt="#" src={photo().slice(4,-1)} />
   </section>
   <p>Widget by DankDevTeam</p>
