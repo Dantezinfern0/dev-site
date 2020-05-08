@@ -34,6 +34,8 @@ const WeatherWidget = () => {
           currentWindSpeed: resp.current.wind_speed + 'mph',
           currentWindDir: resp.current.wind_deg + '°',
           currentWindDeg: resp.current.wind_deg,
+          dailyMax: convert(resp.daily[0].temp.max),
+          dailyMin: convert(resp.daily[0].temp.min),
         })
         console.log(resp)
       })
@@ -118,6 +120,8 @@ const WeatherWidget = () => {
     <h4>
       Wind direction: {direction()} @ {weather.currentWindDir}
     </h4>
+    <h3>High: {weather.dailyMax}</h3>
+    <h3>Low: {weather.dailyMin}</h3>
     <img id="indicator" alt="#" src={photo().slice(4,-1)} />
   </section>
   <p>Widget by DankDevTeam</p>
