@@ -13,11 +13,13 @@ const part = "hourly"
 // data for dynamic background switch
 const indicate = {
   sun: "https://cdn.pixabay.com/photo/2013/07/13/10/23/sun-157126_1280.png",
-  rain: "https://cdn.pixabay.com/photo/2018/05/31/13/13/rain-3443977_1280.jpg",
+  moon: "https://cdn.pixabay.com/photo/2020/04/15/07/17/moon-5045418_1280.jpg",
+  rain: "https://cdn.pixabay.com/photo/2013/02/21/19/11/rain-84648_1280.jpg",
   thunderstorm: "https://cdn.pixabay.com/photo/2013/04/01/09/22/thunderstorm-98541_1280.png",
   snow: "https://cdn.pixabay.com/photo/2014/04/02/14/10/cloud-306404_1280.png",
   drizzle: "https://cdn.pixabay.com/photo/2016/03/31/15/03/background-1292963_1280.png",
-  cloudy: "https://cdn.pixabay.com/photo/2014/04/03/11/56/clouds-312651_1280.png"
+  cloudy: "https://cdn.pixabay.com/photo/2014/04/03/11/56/clouds-312651_1280.png",
+  clear: "https://cdn.pixabay.com/photo/2017/11/04/08/14/tree-2916763_1280.jpg"
 }
 
 const WeatherWidget = () => {
@@ -39,7 +41,8 @@ const WeatherWidget = () => {
           dailyMax: convert(resp.daily[0].temp.max),
           dailyMin: convert(resp.daily[0].temp.min),
           sunrise: resp.current.sunrise,
-          sunset: resp.current.sunset
+          sunset: resp.current.sunset,
+          time: resp.current.dt
         })
         console.log(resp)
       })
@@ -97,7 +100,7 @@ const WeatherWidget = () => {
     } else if (itIs === 'Snow') {
       return  `url(${indicate.snow})`
     } else {
-      return `url(${indicate.sun})`
+      return `url(${indicate.clear})`
     }
   }
 
