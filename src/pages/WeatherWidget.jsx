@@ -25,7 +25,8 @@ const indicate = {
 
 const WeatherWidget = () => {
   const  [errors, setErrors] =  useState(false)
-  const  [weather,setWeather ]= useState({})
+  const  [weather,setWeather] = useState({})
+
 
   const getWeather = async () => {
     const get = await fetch(`${url}?lat=${pitts.lat}&lon=${pitts.lon}&exclude=${part}&appid=${key}`);
