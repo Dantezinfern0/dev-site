@@ -10,6 +10,7 @@ const pitts = {
   lon : -79.99
 }
 const part = "hourly"
+
 // data for dynamic background switch
 const indicate = {
   sun: "https://cdn.pixabay.com/photo/2013/07/13/10/23/sun-157126_1280.png",
@@ -51,12 +52,14 @@ const WeatherWidget = () => {
         console.log(errors)
       });
   }
+
   const convert = (k) => {
     k += -273.15
     let f = k * 9/5 
     f += 32
     return Math.round(f) + '°F'
   }
+
   function toTitleCase(str) {
     return str.replace(
         /\w\S*/g,
@@ -90,17 +93,17 @@ const WeatherWidget = () => {
   const photo = () => {
     let itIs = weather.currentDescription
     if ( itIs === 'Rain') {
-      return `url(${indicate.rain})`
+      return indicate.rain
     } else if (itIs === 'Thunderstorm') {
-      return `url(${indicate.thunderstorm})`
+      return indicate.thunderstorm
     } else if (itIs === 'Drizzle') {
-      return `url(${indicate.drizzle})`
+      return indicate.drizzle
     } else if (itIs === 'Clouds') {
-      return `url(${indicate.cloudy})`
+      return indicate.cloudy
     } else if (itIs === 'Snow') {
-      return  `url(${indicate.snow})`
+      return  indicate.snow
     } else {
-      return `url(${indicate.clear})`
+      return indicate.clear
     }
   }
 
@@ -109,7 +112,7 @@ const WeatherWidget = () => {
   },[])
   
   return <div className="center-flex" 
-  style={{backgroundImage: photo()}}>
+  style={{backgroundImage: `url(${photo()})`}}>
     <section>
     <h1>
       Current Weather
@@ -124,10 +127,9 @@ const WeatherWidget = () => {
     <h3>High: {weather.dailyMax}</h3>
     <h3>Low: {weather.dailyMin}</h3>
     <h3>{'Sunrise: '}
-    <Moment unix format="HH:mm">{weather.sunrise}</Moment></h3>
+    <Moment unix format="hh:mm">{weather.sunrise}</Moment>AM</h3>
     <h3>{'Sunset: '}
-    <Moment unix format="HH:mm">{weather.sunset}</Moment>
-    </h3>
+    <Moment unix format="hh:mm">{weather.sunset}</Moment>PM</h3>
     <h4>
       Wind speed: {weather.currentWindSpeed}
     </h4>
@@ -135,7 +137,7 @@ const WeatherWidget = () => {
       Wind direction: {direction()} @ {weather.currentWindDir}
     </h4>
     <br />
-    <img id="indicator" alt="#" src={photo().slice(4,-1)} />
+    <img id="indicator" alt="#" src={photo()} />
   </section>
   <p>Widget by DankDevTeam</p>
 </div>
