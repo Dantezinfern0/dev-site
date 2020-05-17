@@ -17,16 +17,25 @@ const Diana = () => {
         <Container>
             <Row>
                 <Col>
-                    <h1>Hello, I'm Diana</h1>
+                    <h1>Meet Diana</h1>
                     <img id="dAvatar" src={dAvatar} alt="Diana's avatar" />
-                    <p>Diana is a master designer,<br />
-                    she has an eye for what's cool.</p>
+                    <p>Diana writes catchy melodies, communicates with animals, 
+                        can make dessert out of nearly anything, and 
+                        plays a mean game of Scrabble!</p>
                 </Col>
 
                 <Col>
-                <h5>Diana has worked for Armory Print works and was a virtual assistant for many years.
-                    She is excellent at Design, Social Media, and making logos.  She has helped many businesses to grow
-                    their customer base, manage inventory, design products, web sites, branding, you name it.</h5>
+                <h5>Diana has over 20 years of experience helping entrepreneurs and small businesses to thrive and grow. 
+                    As a big picture thinker with a visionary mind, and a heart for those with heart, she is able to build 
+                    upon the dreams of others, bringing life to their ideas, implementing creative plans, and expanding 
+                    their successes. She is always the biggest cheerleader for the chasers of dreams!</h5>
+                    <h5>
+
+                    For the past 9 years, she has learned the back end of online businesses, including marketing, social 
+                    media, graphic and web design, customer service, sales, email list management, blog and newsletter creation, 
+                    and e-commerce store management.</h5>
+
+                    <h5>Diana specializes in visual content creation and has an eye for design.</h5>
                     <LinkedIn link={linkIn} />
                     <EmailMe />
                 </Col>
