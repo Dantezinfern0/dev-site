@@ -14,6 +14,9 @@ footer {
   color: ivory;
   padding: 1rem;
 }
+#dAvatar {
+  width: 90%;
+}
 .icon-img {
   height: 100px;
   width: 100px;

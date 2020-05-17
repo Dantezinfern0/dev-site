@@ -1,12 +1,9 @@
 import React from 'react'
 import {Button} from 'reactstrap'
 
-const linkedIn = {
-    name: "Linkedin",
-    link: "https://www.linkedin.com/in/k-dante-harasz"
-}
 
-const LinkedIn = () => {
+
+const LinkedIn = (props) => {
     return <>
         <Button 
         className="small-margin"
@@ -14,7 +11,7 @@ const LinkedIn = () => {
         color="success"
         size="large"
         target="_blank"
-        href={linkedIn.link}>
+        href={props.link}>
             LinkedIn
         </Button>
     </>
