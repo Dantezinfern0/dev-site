@@ -14,8 +14,11 @@ footer {
   color: ivory;
   padding: 1rem;
 }
+#aDante {
+  max-width: 100%;
+}
 #dAvatar {
-  width: 90%;
+  max-width: 100%;
 }
 .icon-img {
   height: 100px;

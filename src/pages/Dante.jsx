@@ -34,7 +34,7 @@ const Dante = () => {
                                 {logos.map((logo, i) => {return <img className="icon-img" key={i} src={logo.src} alt={logo.altText} />})}
                             </Col>
                             <Col>
-                                <img src={avatar} alt="cartoon avatar of dante" />
+                                <img id="aDante" src={avatar} alt="cartoon avatar of dante" />
                             </Col>
                         </Row>
                     </Container>
