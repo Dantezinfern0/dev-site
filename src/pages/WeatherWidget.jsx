@@ -24,7 +24,7 @@ const indicate = {
 }
 
 const WeatherWidget = () => {
-  const  [errors, setErrors] =  useState(false)
+  const  [errors, setErrors] =  useState('')
   const  [weather,setWeather] = useState({})
 
 
@@ -117,6 +117,8 @@ const WeatherWidget = () => {
     <section>
     <h1>
       Current Weather
+      <br />
+      <Moment unix format="MM/DD/YYYY">{weather.time}</Moment>
     </h1>
     <p>Pittsburgh, PA</p>
     <h2>
