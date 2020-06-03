@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react'
 import Moment from 'react-moment'
 import '../styles/widget.css'
 
-// data for fetch url
 const key = "770d3167b3eba3b1c6578ba7c1153c3b"
 const url = "https://api.openweathermap.org/data/2.5/onecall"
 const pitts = {
@@ -10,8 +9,6 @@ const pitts = {
   lon : -79.99
 }
 const part = "hourly"
-
-// data for dynamic background switch
 const indicate = {
   sun: "https://cdn.pixabay.com/photo/2013/07/13/10/23/sun-157126_1280.png",
   moon: "https://cdn.pixabay.com/photo/2020/04/15/07/17/moon-5045418_1280.jpg",
@@ -26,7 +23,6 @@ const indicate = {
 const WeatherWidget = () => {
   const  [errors, setErrors] =  useState('')
   const  [weather,setWeather] = useState({})
-
 
   const getWeather = async () => {
     const get = await fetch(`${url}?lat=${pitts.lat}&lon=${pitts.lon}&exclude=${part}&appid=${key}`);
@@ -53,15 +49,13 @@ const WeatherWidget = () => {
         console.log(errors)
       });
   }
-
   const convert = (k) => {
     k += -273.15
     let f = k * 9/5 
     f += 32
     return Math.round(f) + '°F'
   }
-
-  function toTitleCase(str) {
+  const toTitleCase = (str) => {
     return str.replace(
         /\w\S*/g,
         function(txt) {
@@ -107,29 +101,22 @@ const WeatherWidget = () => {
       return indicate.clear
     }
   }
-
   useEffect(() => {
     getWeather()
   },[])
   
-  return <div className="center-flex" 
-  style={{backgroundImage: `url(${photo()})`}}>
+  return (
+  <div className="center-flex" style={{backgroundImage: `url(${photo()})`}}>
     <section>
-    <h1>
-    Pittsburgh, PA
-    </h1>
+    <h1>Pittsburgh, PA</h1>
     <h3>
       <Moment unix format="MM/DD/YYYY">{weather.time}</Moment>
     </h3>
     <h3>
       <Moment unix format="HH:MM">{weather.time}</Moment>
     </h3>
-    <h3>
-      {weather.currentMessage}
-    </h3>
-    <h1>
-      {weather.currentTemp}
-    </h1>
+    <h3>{weather.currentMessage}</h3>
+    <h1>{weather.currentTemp}</h1>
     <h4>High: {weather.dailyMax}</h4>
     <h4>Low: {weather.dailyMin}</h4>
     <h4>{'Sunrise: '}
@@ -145,5 +132,5 @@ const WeatherWidget = () => {
   </section>
   <p>Widget by DankDevTeam</p>
 </div>
-}
+  )}
 export default WeatherWidget
