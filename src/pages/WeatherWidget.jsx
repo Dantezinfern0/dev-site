@@ -116,28 +116,32 @@ const WeatherWidget = () => {
   style={{backgroundImage: `url(${photo()})`}}>
     <section>
     <h1>
-      Current Weather
-      <br />
-      <Moment unix format="MM/DD/YYYY">{weather.time}</Moment>
+    Pittsburgh, PA
     </h1>
-    <p>Pittsburgh, PA</p>
-    <h2>
-      Current: {weather.currentTemp}
-    </h2>
     <h3>
-      Conditions: {weather.currentMessage}
+      <Moment unix format="MM/DD/YYYY">{weather.time}</Moment>
     </h3>
+    <h3>
+      <Moment unix format="HH:MM">{weather.time}</Moment>
+    </h3>
+    <h3>
+      {weather.currentMessage}
+    </h3>
+    <h1>
+      {weather.currentTemp}
+    </h1>
     <h3>High: {weather.dailyMax}</h3>
     <h3>Low: {weather.dailyMin}</h3>
     <h3>{'Sunrise: '}
-    <Moment unix format="hh:mm">{weather.sunrise}</Moment>AM</h3>
+    <Moment unix format="HH:MM">{weather.sunrise}</Moment></h3>
     <h3>{'Sunset: '}
-    <Moment unix format="hh:mm">{weather.sunset}</Moment>PM</h3>
-    <h4>
+    <Moment unix format="HH:MM">{weather.sunset}</Moment></h3>
+    <h6>
       Wind speed: {weather.currentWindSpeed}
-    </h4>
+      {' '}
+      {direction()} @ {weather.currentWindDir}
+    </h6>
     <h4>
-      Wind direction: {direction()} @ {weather.currentWindDir}
     </h4>
     <br />
     <img id="indicator" alt="#" src={photo()} />
