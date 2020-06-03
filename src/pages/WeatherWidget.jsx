@@ -141,9 +141,6 @@ const WeatherWidget = () => {
       {' '}
       {direction()} @ {weather.currentWindDir}
     </h6>
-    <h4>
-    </h4>
-    <br />
     <img id="indicator" alt="#" src={photo()} />
   </section>
   <p>Widget by DankDevTeam</p>
