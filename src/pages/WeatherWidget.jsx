@@ -130,12 +130,12 @@ const WeatherWidget = () => {
     <h1>
       {weather.currentTemp}
     </h1>
-    <h3>High: {weather.dailyMax}</h3>
-    <h3>Low: {weather.dailyMin}</h3>
-    <h3>{'Sunrise: '}
-    <Moment unix format="HH:MM">{weather.sunrise}</Moment></h3>
-    <h3>{'Sunset: '}
-    <Moment unix format="HH:MM">{weather.sunset}</Moment></h3>
+    <h4>High: {weather.dailyMax}</h4>
+    <h4>Low: {weather.dailyMin}</h4>
+    <h4>{'Sunrise: '}
+    <Moment unix format="HH:MM">{weather.sunrise}</Moment></h4>
+    <h4>{'Sunset: '}
+    <Moment unix format="HH:MM">{weather.sunset}</Moment></h4>
     <h6>
       Wind speed: {weather.currentWindSpeed}
       {' '}
