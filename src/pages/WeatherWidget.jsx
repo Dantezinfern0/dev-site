@@ -112,9 +112,6 @@ const WeatherWidget = () => {
     <h3>
       <Moment unix format="MM/DD/YYYY">{weather.time}</Moment>
     </h3>
-    <h3>
-      <Moment unix format="HH:MM">{weather.time}</Moment>
-    </h3>
     <h3>{weather.currentMessage}</h3>
     <h1>{weather.currentTemp}</h1>
     <h4>High: {weather.dailyMax}</h4>
