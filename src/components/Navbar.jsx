@@ -39,7 +39,7 @@ import {
                                 <NavLink href="https://visualvitamin.shop">VisualVitamin.shop</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/weather">Weather</NavLink>
+                                <NavLink href="https://react-i-danteharasz.netlify.app/">Octocats</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink href="/tipcalc">TipCalc</NavLink>
