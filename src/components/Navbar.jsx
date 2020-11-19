@@ -42,6 +42,9 @@ import {
                                 <NavLink href="https://react-i-danteharasz.netlify.app/">Octocats</NavLink>
                             </NavItem>
                             <NavItem>
+                                <NavLink href="https://rock-climbing-log-and-planner.herokuapp.com/weather-data">TheClimber</NavLink>
+                            </NavItem>
+                            <NavItem>
                                 <NavLink href="/tipcalc">TipCalc</NavLink>
                             </NavItem>
                         </Nav>
