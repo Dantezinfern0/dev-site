@@ -7,6 +7,7 @@ import Dante from './pages/Dante'
 import Diana from './pages/Diana'
 import Rotator from './components/Rotator'
 import TipCalc from './pages/TipCalc'
+import WeatherWidget from './pages/WeatherWidget'
 
 class App extends Component {
     render() {
@@ -18,6 +19,7 @@ class App extends Component {
                         <Route exact path="/dante" component={Dante}></Route>
                         <Route exact path="/diana" component={Diana}></Route>
                         <Route exact path="/projects" component={Rotator}></Route>
+                        <Route exact path="/weather" component={WeatherWidget}></Route>
                         <Route exact path="/tipcalc" component={TipCalc}></Route>
                     </Switch>
                 </BrowserRouter>
