@@ -137,7 +137,7 @@ render() {
     </h6>
     <img id="indicator" alt="#" src={this.photo()} />
   </section>
-  <p>Widget by DankDevTeam</p>
+  <p>Widget by Dante Harasz</p>
 </div>
 </div>)
 }}

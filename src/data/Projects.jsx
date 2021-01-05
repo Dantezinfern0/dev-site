@@ -8,14 +8,14 @@ const Projects = [
       url: 'https://randy.land',
       imgSrc: `${randyland}`,
       altText: 'Randyland website screenshot',
-      desc: 'This was originally a WordPress Site that Dante recreated with React.js to give us the freedom to design it the way our client wanted.'
+      desc: 'This was originally a WordPress Site that I recreated with React.js so I could design it the way my client wanted.'
     },
     {
       title: 'Mine Sweeper', 
       url: 'https://mine-sweeper-danteharasz.netlify.com/',
       imgSrc: `${mineSweeper}`,
       altText: 'mine sweeper website screenshot', 
-      desc: 'Mine Sweeper is a classic game that Dante recreated with JavaScript using an Api to keep track of the game state.'
+      desc: 'Mine Sweeper is a classic game I recreated with JavaScript using an Api to keep track of the game state.'
     },
     {
       title: 'Movie Api',
