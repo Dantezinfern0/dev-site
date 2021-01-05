@@ -19,7 +19,7 @@ const Projects = [
     },
     {
       title: 'Movie Api',
-      url: 'https://movies-danteharasz.netlify.com/', 
+      url: 'https://movie-site-project-2019.netlify.app/', 
       imgSrc: `${movies}`,
       altText: 'Movie website screenshot',
       desc: 'This was a fun group project where we used different modules and packages to interact with a movie Api and dynamically create pages based on the data that is returned by the Api.'
