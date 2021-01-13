@@ -1,7 +1,7 @@
 import React from 'react'
 import {
     Container,
-    Row,
+    // Row,
     Col,
     Jumbotron
 } from 'reactstrap';
