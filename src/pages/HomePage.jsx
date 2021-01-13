@@ -12,8 +12,8 @@ import {
 
 const HomePage = () => {
     return <div>
-        <Main />
         <Dante />
+        <Main />
         <WeatherWidget />
         <Jumbotron>
             <Container>
