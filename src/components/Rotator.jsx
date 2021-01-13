@@ -45,7 +45,8 @@ const Rotator = (props) => {
       </CarouselItem>
     );
   });
-  return (
+  return ( <div>
+    <h1 className="center-text">Projects</h1>
     <Carousel
       activeIndex={activeIndex}
       next={next}
@@ -56,6 +57,7 @@ const Rotator = (props) => {
       <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
       <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
     </Carousel>
+    </div>
   );
 }
 

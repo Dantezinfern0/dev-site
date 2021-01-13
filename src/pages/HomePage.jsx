@@ -3,26 +3,23 @@ import Dante from '../pages/Dante'
 import Main from '../components/Main'
 import Rotator from '../components/Rotator'
 import WeatherWidget from '../pages/WeatherWidget'
+import TipCalc from '../pages/TipCalc'
 import {
     Container,
-    Row,
-    // Col,
+    // Row,
+    Col,
     Jumbotron
 } from 'reactstrap';
 
 const HomePage = () => {
     return <div>
-        <Dante />
-        <Main />
-        <WeatherWidget />
         <Jumbotron>
             <Container>
-                <Row>
-                    <h1>
-                        Projects
-                    </h1>
-                    <Rotator />
-                </Row>
+                <Dante />
+                <Main />
+                <WeatherWidget />
+                <Rotator />
+                <TipCalc />
             </Container>
         </Jumbotron>
     </div>

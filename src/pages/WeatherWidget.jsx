@@ -118,6 +118,8 @@ render() {
     <div>
    <div className="center-flex" style={{backgroundImage: `url(${this.photo()})`}}>
     <section>
+    <h1>Current Weather</h1>
+    <h2>for</h2>
     <h1>Pittsburgh, PA</h1>
     <h3>
       <Moment unix format="MM/DD/YYYY">{this.state.time}</Moment>
@@ -137,7 +139,7 @@ render() {
     </h6>
     <img id="indicator" alt="#" src={this.photo()} />
   </section>
-  <p>Widget by Dante Harasz</p>
+  <p className="color-ivory">Widget by Dante Harasz</p>
 </div>
 </div>)
 }}

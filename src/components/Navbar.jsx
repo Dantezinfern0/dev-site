@@ -33,6 +33,12 @@ import {
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem>
+                                <NavLink href="/dante">Dante</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="/projects">Projects</NavLink>
+                            </NavItem>
+                            <NavItem>
                                 <NavLink href="/weather">Weather</NavLink>
                             </NavItem>
                             <NavItem>

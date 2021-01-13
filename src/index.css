@@ -20,6 +20,13 @@ footer {
 #dAvatar {
   max-width: 100%;
 }
+.center-text {
+  text-align: center;
+  padding-top: 0.5rem;
+}
+.color-ivory {
+  color: ivory;
+}
 .icon-img {
   height: 100px;
   width: 100px;
