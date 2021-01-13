@@ -7,7 +7,7 @@ import TipCalc from '../pages/TipCalc'
 import {
     Container,
     // Row,
-    Col,
+    // Col,
     Jumbotron
 } from 'reactstrap';
 
