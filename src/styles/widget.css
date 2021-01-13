@@ -19,4 +19,6 @@ section {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
   }

@@ -5,7 +5,9 @@ import {
   CarouselControl,
   CarouselIndicators,
   CarouselCaption,
-  NavLink
+  NavLink,
+  Jumbotron,
+  Container
 } from 'reactstrap';
 import projects from '../data/Projects'
 
@@ -46,17 +48,21 @@ const Rotator = (props) => {
     );
   });
   return ( <div>
-    <h1 className="center-text">Projects</h1>
-    <Carousel
-      activeIndex={activeIndex}
-      next={next}
-      previous={previous}
-    >
-      <CarouselIndicators items={projects} activeIndex={activeIndex} onClickHandler={goToIndex} />
-      {slides}
-      <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-      <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
-    </Carousel>
+    <Jumbotron>
+      <Container>
+        <h1 className="center-text">Projects</h1>
+        <Carousel
+          activeIndex={activeIndex}
+          next={next}
+          previous={previous}
+        >
+          <CarouselIndicators items={projects} activeIndex={activeIndex} onClickHandler={goToIndex} />
+          {slides}
+          <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
+          <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
+        </Carousel>
+      </Container>
+    </Jumbotron>
     </div>
   );
 }
