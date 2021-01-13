@@ -119,7 +119,7 @@ render() {
    <div className="center-flex" style={{backgroundImage: `url(${this.photo()})`}}>
     <section>
     <h1>Current Weather</h1>
-    <h2>for</h2>
+    <h3>for</h3>
     <h1>Pittsburgh, PA</h1>
     <h3>
       <Moment unix format="MM/DD/YYYY">{this.state.time}</Moment>
