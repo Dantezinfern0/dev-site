@@ -33,22 +33,13 @@ import {
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink href="https://randy.land">Randyland</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="https://visualvitamin.shop">VisualVitamin.shop</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="https://react-i-danteharasz.netlify.app/">Octocats</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="https://rock-climbing-log-and-planner.herokuapp.com/weather-data">TheClimber</NavLink>
-                            </NavItem>
-                            <NavItem>
                                 <NavLink href="/weather">Weather</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink href="/tipcalc">TipCalc</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="/affiliates">Affiliates</NavLink>
                             </NavItem>
                         </Nav>
                     </Collapse>
