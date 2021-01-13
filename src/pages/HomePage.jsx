@@ -5,7 +5,7 @@ import Rotator from '../components/Rotator'
 import WeatherWidget from '../pages/WeatherWidget'
 import {
     Container,
-    Row,
+    // Row,
     // Col,
     Jumbotron
 } from 'reactstrap';
