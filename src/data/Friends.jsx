@@ -4,6 +4,14 @@ const Friends = [
         author: "Diana Morgan",
         title: "Author/Artist"
     },{
+        url: "https://www.randy.land",
+        author: "Randyland",
+        title: "Museum of the Heart Pittsburgh, PA"
+    },{
+        url: "https://www.visualvitamin.shop",
+        author: "Randy Gilson",
+        title: "Street Artist"
+    },{
         url: "https://www.instagram.com/johnmauricemuldoon",
         author: "John Maurice Muldoon",
         title: "Street Artist"
