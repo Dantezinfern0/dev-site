@@ -27,7 +27,7 @@ import {
     return ( <>
                 <Navbar color="inverse" light expand="md">
                     <NavbarBrand href="/">
-                        DantHarasz.dev
+                        DanteHarasz.dev
                     </NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
