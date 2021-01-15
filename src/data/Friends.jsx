@@ -16,6 +16,10 @@ const Friends = [
         author: "John Maurice Muldoon",
         title: "Street Artist"
     },{
+        url: "http://www.normscyclecenter.com/",
+        author: "Norm's Cycle Center",
+        title: "Cycle Repairs - Inspections - Reconstructions - Parts"
+    },{
         url: "https://bicycycleheaven.org",
         author: "Bicycle Heaven",
         title: "Worlds Largest Bicycle Museum and Bike Shop!"
