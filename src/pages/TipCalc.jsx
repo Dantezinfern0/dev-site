@@ -32,7 +32,7 @@ const TipCalc = () => {
     useEffect(() => {
         const input = document.getElementById("checkAmount");
         input.addEventListener("keyup", function(event) {
-        if (event.keyCode === 13) {
+        if (KeyboardEvent.code === 13) {
         event.preventDefault();
         document.getElementById("tipButton").click();
     }
