@@ -60,17 +60,17 @@ const TipCalc = () => {
                     <Button id="tipButton"onClick={() => calc()}>Calculate</Button>
                     </Col>
                     <Col>
-                        <h4>20%</h4>
+                        <h4 className="underline">20%</h4>
                         <p>${isReady ? commas(twenty) : "0.00"}</p>
                         <p>Total:${isReady ? commas(total20) : "0.00"}</p>
                     </Col>
                     <Col>
-                        <h4>15%</h4>
+                        <h4 className="underline">15%</h4>
                         <p>${isReady ? commas(fifteen) : "0.00"}</p>
                         <p>Total:${isReady ? commas(total15) : "0.00"}</p>
                     </Col>
                     <Col>
-                        <h4>10%</h4>
+                        <h4 className="underline">10%</h4>
                         <p>${isReady ? commas(ten) : "0.00"}</p>
                         <p>Total:${isReady ? commas(total10) : "0.00"}</p>
                     </Col>

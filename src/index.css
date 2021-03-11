@@ -42,3 +42,6 @@ footer {
 .small-margin {
   margin: 0.5rem;
 }
+.underline {
+  text-decoration: underline;
+}
