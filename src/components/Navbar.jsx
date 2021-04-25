@@ -45,6 +45,9 @@ import {
                                 <NavLink href="/tipcalc">TipCalc</NavLink>
                             </NavItem>
                             <NavItem>
+                                <NavLink href="/chess">Chess</NavLink>
+                            </NavItem>
+                            <NavItem>
                                 <NavLink href="/affiliates">Affiliates</NavLink>
                             </NavItem>
                         </Nav>

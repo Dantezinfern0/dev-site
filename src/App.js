@@ -8,6 +8,7 @@ import Rotator from './components/Rotator'
 import TipCalc from './pages/TipCalc'
 import WeatherWidget from './pages/WeatherWidget'
 import Affiliates from './components/Affiliates'
+import Chess from './pages/Chess'
 
 class App extends Component {
     render() {
@@ -21,6 +22,7 @@ class App extends Component {
                         <Route exact path="/projects" component={Rotator}></Route>
                         <Route exact path="/weather" component={WeatherWidget}></Route>
                         <Route exact path="/tipcalc" component={TipCalc}></Route>
+                        <Route exact path="/chess" component={Chess}></Route>
                     </Switch>
                 </BrowserRouter>
                 <Footer />
