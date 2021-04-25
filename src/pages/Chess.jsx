@@ -22,7 +22,7 @@ const Chess = () => {
                 allowtransparency="true" 
                 frameBorder="0" 
                 crossOrigin="true"></iframe>
-                </div>
+            </div>
         </div>
     )
 }
