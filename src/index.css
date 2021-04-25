@@ -29,6 +29,7 @@ footer {
   justify-content: center;
   flex-wrap: nowrap;
   flex-direction: column;
+  align-items: center;
 }
 .color-ivory {
   color: ivory;
