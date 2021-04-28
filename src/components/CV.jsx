@@ -11,7 +11,7 @@ const CV = () => {
         size="large"
         href={resume}
         target="_blank">
-            View my CV
+            Resume/CV
     </Button>
     </>
 }
