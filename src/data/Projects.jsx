@@ -1,16 +1,8 @@
-import randyland from '../images/RandylandSite.jpg'
 import movies from '../images/movie.png'
 import mineSweeper from '../images/mine-sweeper.png'
 import OctoCat from '../images/octo-cat.png'
 
 const Projects = [
-    {
-      title: 'Randyland',
-      url: 'https://randy.land',
-      imgSrc: `${randyland}`,
-      altText: 'Randyland website screenshot',
-      desc: 'This was originally a WordPress Site that I recreated with React.js so I could design it the way my client wanted.'
-    },
     {
       title: 'Mine Sweeper', 
       url: 'https://mine-sweeper-danteharasz.netlify.com/',
