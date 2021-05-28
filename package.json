@@ -32,13 +32,13 @@
   "dependencies": {
     "bootstrap": "^4.4.1",
     "caniuse-lite": "^1.0.30001181",
-    "json": "^9.0.6",
+    "json": "^11.0.0",
     "moment": "^2.25.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-moment": "^0.9.7",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.4.1",
+    "react-scripts": "^4.0.3",
     "reactstrap": "^8.4.1"
   },
   "homepage": "https://dante-harasz.netlify.com"
