@@ -33,22 +33,22 @@ import {
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink href="/dante">Dante</NavLink>
+                                <NavLink className="button-bump" href="/dante">Dante</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/projects">Projects</NavLink>
+                                <NavLink className="button-bump" href="/projects">Projects</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/weather">Weather</NavLink>
+                                <NavLink className="button-bump" href="/weather">Weather</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/tipcalc">TipCalc</NavLink>
+                                <NavLink className="button-bump" href="/tipcalc">TipCalc</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/chess">Chess</NavLink>
+                                <NavLink className="button-bump" href="/chess">Chess</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/affiliates">Affiliates</NavLink>
+                                <NavLink className="button-bump" href="/affiliates">Affiliates</NavLink>
                             </NavItem>
                         </Nav>
                     </Collapse>

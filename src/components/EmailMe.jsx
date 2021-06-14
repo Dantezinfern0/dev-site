@@ -4,7 +4,7 @@ import {Button} from 'reactstrap'
 const EmailMe = () => {
     return <>
         <Button
-                className="small-margin"
+                className="small-margin button-bump"
                 tag="a"
                 color="success"
                 size="large"

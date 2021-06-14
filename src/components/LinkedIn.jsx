@@ -6,7 +6,7 @@ import {Button} from 'reactstrap'
 const LinkedIn = (props) => {
     return <>
         <Button 
-        className="small-margin"
+        className="small-margin button-bump"
         tag="a"
         color="success"
         size="large"

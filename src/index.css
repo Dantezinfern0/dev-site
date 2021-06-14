@@ -8,10 +8,6 @@ html {
 body {
   font-family: 'Source Code Pro', monospace !important;
 }
-/* a:hover {
-  position: relative;
-  bottom: 4px;
-} */
 footer {
   text-align: center;
   background-color: black;
@@ -23,6 +19,10 @@ footer {
 }
 #dAvatar {
   max-width: 100%;
+}
+.button-bump:hover {
+  position: relative;
+  bottom: 4px;
 }
 .center-text {
   text-align: center;

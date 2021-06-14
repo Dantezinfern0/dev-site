@@ -5,7 +5,7 @@ import resume from '../images/DanteHaraszResume.jpg'
 const CV = () => {
     return <>
      <Button
-        className="small-margin"
+        className="small-margin button-bump"
         tag="a"
         color="success"
         size="large"
