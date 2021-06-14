@@ -27,9 +27,6 @@ const Dante = () => {
                                     <span>
                                         {description}
                                     </span>
-                                    <span>
-                                        <a href={newsLink}>Randyland Museum.</a>
-                                    </span>
                                     <br />
                                     <LinkedIn link={linkedIn} />
                                     <Github  />
