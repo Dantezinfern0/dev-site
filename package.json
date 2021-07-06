@@ -34,7 +34,7 @@
     "caniuse-lite": "^1.0.30001239",
     "json": "^11.0.0",
     "moment": "^2.25.3",
-    "react": "^16.13.1",
+    "react": "^17.0.2",
     "react-dom": "^16.13.1",
     "react-moment": "^1.1.1",
     "react-router-dom": "^5.1.2",
