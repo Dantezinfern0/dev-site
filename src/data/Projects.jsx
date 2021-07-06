@@ -16,13 +16,6 @@ const Projects = [
       imgSrc: `${movies}`,
       altText: 'Movie website screenshot',
       desc: 'This was a fun group project where we used different modules and packages to interact with a movie Api and dynamically create pages based on the data that is returned by the Api.'
-    },
-    {
-      title: 'Octo-Cat Roledex',
-      url: 'https://react-octocats-danteharasz.netlify.app/',
-      imgSrc: `${OctoCat}`,
-      altText: 'Octo-Cat website screenshot',
-      desc: 'This is one of my projects from my time at Suncoast Developers Guild'
     }
   ];
   export default Projects
