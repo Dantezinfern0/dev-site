@@ -50,9 +50,6 @@ import {
                             <NavItem>
                                 <NavLink className="button-bump" href="/octocats">Octocats</NavLink>
                             </NavItem>
-                            {/* <NavItem>
-                                <NavLink className="button-bump" href="/minesweeper">Minesweeper</NavLink>
-                            </NavItem> */}
                             <NavItem>
                                 <NavLink className="button-bump" href="/affiliates">Affiliates</NavLink>
                             </NavItem>
