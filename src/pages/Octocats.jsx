@@ -16,7 +16,7 @@ class Octocats extends Component {
       .then(json => {
         console.log(json.data)
         this.setState({
-          dataList: json.data
+          dataList: json.data.reverse()
         })
       })
   }
