@@ -1,37 +1,47 @@
 import React, { useState } from 'react'
 import '../styles/colorpicker.css'
+import {
+    Container,
+    Jumbotron
+} from 'reactstrap';
 
 export default function Colors() {
-  let rdm359 = () => {
+  const rdm359 = () => {
     return Math.random() * 359
   }
-  let rdm100 = () => {
+  const rdm100 = () => {
     return Math.random() * 100
   }
+  
   const randomIz = () => {
-    setLigV(rdm100)
-    setSatV(rdm100)
-    setHueV(rdm359)
+    setHValue(rdm359)
+    setSValue(rdm100)
+    setLValue(rdm100)
+    setHValue2(Math.abs(hValue - 180))
+    setSValue2(Math.abs(sValue - 50))
+    setLValue2(Math.abs(lValue - 50))
+    setAValue(Math.abs(aValue - 50))
   }
-  const [hValue, setHueV] = useState(rdm359)
-  const [sValue, setSatV] = useState(rdm100)
-  const [lValue, setLigV] = useState(rdm100)
-  const [aValue, setOpV] = useState(0.95)
+  const [hValue, setHValue] = useState(rdm359())
+  const [sValue, setSValue] = useState(rdm100())
+  const [lValue, setLValue] = useState(rdm100())
+  const [aValue, setAValue] = useState(0.95)
+  const [hValue2, setHValue2] = useState(335)
+  const [sValue2, setSValue2] = useState(0.89)
+  const [lValue2, setLValue2] = useState(0.32)
+  const [aValue2, setAValue2] = useState(0.95)
   // console.log({sValue, hValue, lValue})
-  let style = {
-    color: `hsl(${Math.abs(hValue - 180)},${Math.abs(sValue - 50)},${Math.abs(
-      lValue - 50
-    )})`
-  }
+  
   return (
-    <>
-     <h1>Color Picker</h1>
+      <Jumbotron>
+    <Container>
+     <h1 className="title">Color Picker</h1>
       <main className="flex-it colors-container">
         <div className="three-buttons">
-          <h6 style={style}>Hue {Math.ceil(hValue)}˚</h6>
+          <h6>Hue {Math.ceil(hValue)}˚</h6>
           <div>
             <input
-              onChange={event => setHueV(event.target.value)}
+              onChange={event => setHValue(event.target.value)}
               type="range"
               min="0"
               max="359"
@@ -43,7 +53,7 @@ export default function Colors() {
           <h6>Saturation {Math.ceil(sValue)}%</h6>
           <div>
             <input
-              onChange={event => setSatV(event.target.value)}
+              onChange={event => setSValue(event.target.value)}
               type="range"
               min="0"
               max="100"
@@ -55,7 +65,7 @@ export default function Colors() {
           <h6>Lightness {Math.ceil(lValue)}%</h6>
           <div>
             <input
-              onChange={event => setLigV(event.target.value)}
+              onChange={event => setLValue(event.target.value)}
               type="range"
               min="0"
               max="100"
@@ -67,7 +77,7 @@ export default function Colors() {
           <h6>Opacity {Math.round(100 * aValue)}%</h6>
           <div>
             <input
-              onChange={event => setOpV(event.target.value)}
+              onChange={event => setAValue(event.target.value)}
               type="range"
               min="0"
               max="1"
@@ -83,16 +93,20 @@ export default function Colors() {
           }}
           onClick={() => {
             randomIz()
-          }}
-        >
-          <h2>
+          }}>
+          <h3 style={{
+              color: `hsla(${hValue2},${sValue2}%,${lValue2}%,${aValue2})`
+              }} >
             Click Inside This Box <br />
-            To Randomize Settings
-            <br />
-            {'<---Play With the Slider Bars'}
-          </h2>
+            To Randomize Settings <br />
+            {'<---Play With the Slider Bars'} <br />
+            {'(text color dynamically changes with the background to stay visible)'}
+          </h3>
         </button>
       </main>
-    </>
+    </Container>
+    </Jumbotron>
   )
 }
+
+// `hsla(${Math.abs(hValue - 180)},${Math.abs(sValue - 50)},${Math.abs(lValue - 50)}),1`
