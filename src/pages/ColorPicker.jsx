@@ -18,9 +18,9 @@ export default function Colors() {
     setSValue(rdm100)
     setLValue(rdm100)
     setHValue2(Math.abs(hValue - 180))
-    setSValue2(Math.abs(sValue - 35))
-    setLValue2(Math.abs(lValue - 35))
-    setAValue(Math.abs(aValue - 35))
+    setSValue2(Math.abs(sValue - 50))
+    setLValue2(Math.abs(lValue - 50))
+    setAValue(Math.abs(aValue - 50))
   }
   const fork = (a,b) => {
     if (a === 'hue') {
@@ -32,8 +32,9 @@ export default function Colors() {
     } else if (a === 'light')  {
         setLValue(b)
         setLValue2(Math.abs(b - 50))
-    } else if (a === 'a') {
+    } else if (a === 'opacity') {
         setAValue(b)
+        setAValue2(1)
     }
   }
   const [hValue, setHValue] = useState(rdm359())
@@ -55,7 +56,7 @@ export default function Colors() {
           <h6>Hue {Math.ceil(hValue)}˚</h6>
           <div>
             <input
-              onChange={event => fork('hue', event.target.value)}
+              onChange={event => fork(event.target.name, event.target.value)}
               type="range"
               min="0"
               max="359"
@@ -67,11 +68,11 @@ export default function Colors() {
           <h6>Saturation {Math.ceil(sValue)}%</h6>
           <div>
             <input
-              onChange={event => fork('sat', event.target.value)}
+              onChange={event => fork(event.target.name, event.target.value)}
               type="range"
               min="0"
               max="100"
-              name="saturation"
+              name="sat"
               step="1"
               value={sValue}
             />
@@ -79,11 +80,11 @@ export default function Colors() {
           <h6>Lightness {Math.ceil(lValue)}%</h6>
           <div>
             <input
-              onChange={event => fork('light', event.target.value)}
+              onChange={event => fork(event.target.name, event.target.value)}
               type="range"
               min="0"
               max="100"
-              name="lightness"
+              name="light"
               step="1"
               value={lValue}
             />
@@ -91,11 +92,11 @@ export default function Colors() {
           <h6>Opacity {Math.round(100 * aValue)}%</h6>
           <div>
             <input
-              onChange={event => fork('a', event.target.value)}
+              onChange={event => fork(event.target.name, event.target.value)}
               type="range"
               min="0"
               max="1"
-              name="lightness"
+              name="opacity"
               step="0.01"
               value={aValue}
             />
