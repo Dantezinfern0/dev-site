@@ -42,6 +42,9 @@ import {
                                 <NavLink className="button-bump" href="/weather">Weather</NavLink>
                             </NavItem>
                             <NavItem>
+                                <NavLink className="button-bump" href="/colorpicker">ColorPicker</NavLink>
+                            </NavItem>
+                            <NavItem>
                                 <NavLink className="button-bump" href="/tipcalc">TipCalc</NavLink>
                             </NavItem>
                             <NavItem>

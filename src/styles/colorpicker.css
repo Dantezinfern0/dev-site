@@ -1,0 +1,39 @@
+.colors-container {
+    min-height: 1000px;
+    background-image: url('../images/colorpicker.jpg');
+    background-repeat: round;
+    image-orientation: inherit;
+    image-resolution: 50%;
+    color: brown;
+  }
+  
+  body {
+    margin: 0;
+  }
+  h1 {
+    text-align: center;
+    margin: 0;
+  }
+  button {
+    padding: 4rem;
+    font-style: oblique;
+    color: brown;
+    margin: 1rem;
+  }
+  .flex-it {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .black {
+    color: black;
+  }
+  .three-buttons {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 1rem;
+  }

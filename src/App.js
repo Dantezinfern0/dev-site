@@ -10,6 +10,7 @@ import WeatherWidget from './pages/WeatherWidget'
 import Affiliates from './components/Affiliates'
 import Chess from './pages/Chess'
 import Octocats from './pages/Octocats'
+import ColorPicker from './pages/ColorPicker'
 
 class App extends Component {
     render() {
@@ -25,6 +26,7 @@ class App extends Component {
                         <Route exact path="/tipcalc" component={TipCalc}></Route>
                         <Route exact path="/chess" component={Chess}></Route>
                         <Route exact path="/octocats" component={Octocats}></Route>
+                        <Route exact path="/colorpicker" component={ColorPicker}></Route>
                     </Switch>
                 </BrowserRouter>
                 <Footer />
