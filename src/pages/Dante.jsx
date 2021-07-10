@@ -10,8 +10,9 @@ import CV from '../components/CV'
 import LinkedIn from '../components/LinkedIn'
 import Github from '../components/Github'
 import EmailMe from '../components/EmailMe'
+import DantePortrait from '../images/danteportrait.jpg'
 
-const avatar = "https://lh3.googleusercontent.com/pw/ACtC-3fshkknXBHPY2kqHO9eD0BR8sfflpQBITaQQMDPsvNhNYzXbsP4pzK490FhmtGPS-U7nks5OrxgLh5W7RjUtwetYHAjjPV0jbkEiw3ZQZQ1JZZdsjzLlEEIsPAyXt2PlYj2phqJiae44xGah0jw3wVm=w443-h649-no?authuser=0"
+
 const description = "In 2019 Dante attended code school at Suncoast Developer's guild in St Petersburg, FL.  Since then he has been freelancing and contributing to open source project Lichess.org"
 const linkedIn = "https://www.linkedin.com/in/dante-harasz"
 
@@ -36,7 +37,7 @@ const Dante = () => {
                                 {logos.map((logo, i) => {return <img className="icon-img" key={i} src={logo.src} alt={logo.altText} />})}
                             </Col>
                             <Col>
-                                <img id="aDante" src={avatar} alt="cartoon avatar of dante" />
+                                <img id="aDante" src={DantePortrait} alt="cartoon avatar of dante" />
                             </Col>
                         </Row>
                     </Container>
