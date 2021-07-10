@@ -103,7 +103,8 @@ export default function Colors() {
         </div>
         <button
           style={{
-            backgroundColor: `hsla(${hValue},${sValue}%,${lValue}%,${aValue})`
+            backgroundColor: `hsla(${hValue},${sValue}%,${lValue}%,${aValue})`,
+            borderRadius: '12px'
           }}
           onClick={() => {
             randomIz()
