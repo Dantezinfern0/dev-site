@@ -18,9 +18,23 @@ export default function Colors() {
     setSValue(rdm100)
     setLValue(rdm100)
     setHValue2(Math.abs(hValue - 180))
-    setSValue2(Math.abs(sValue - 50))
-    setLValue2(Math.abs(lValue - 50))
-    setAValue(Math.abs(aValue - 50))
+    setSValue2(Math.abs(sValue - 35))
+    setLValue2(Math.abs(lValue - 35))
+    setAValue(Math.abs(aValue - 35))
+  }
+  const fork = (a,b) => {
+    if (a === 'hue') {
+        setHValue(b)
+        setHValue2(Math.abs(b - 180))
+    } else if (a === 'sat') {
+        setSValue(b)
+        setSValue2(Math.abs(b - 50))
+    } else if (a === 'light')  {
+        setLValue(b)
+        setLValue2(Math.abs(b - 50))
+    } else if (a === 'a') {
+        setAValue(b)
+    }
   }
   const [hValue, setHValue] = useState(rdm359())
   const [sValue, setSValue] = useState(rdm100())
@@ -41,7 +55,7 @@ export default function Colors() {
           <h6>Hue {Math.ceil(hValue)}˚</h6>
           <div>
             <input
-              onChange={event => setHValue(event.target.value)}
+              onChange={event => fork('hue', event.target.value)}
               type="range"
               min="0"
               max="359"
@@ -53,7 +67,7 @@ export default function Colors() {
           <h6>Saturation {Math.ceil(sValue)}%</h6>
           <div>
             <input
-              onChange={event => setSValue(event.target.value)}
+              onChange={event => fork('sat', event.target.value)}
               type="range"
               min="0"
               max="100"
@@ -65,7 +79,7 @@ export default function Colors() {
           <h6>Lightness {Math.ceil(lValue)}%</h6>
           <div>
             <input
-              onChange={event => setLValue(event.target.value)}
+              onChange={event => fork('light', event.target.value)}
               type="range"
               min="0"
               max="100"
@@ -77,7 +91,7 @@ export default function Colors() {
           <h6>Opacity {Math.round(100 * aValue)}%</h6>
           <div>
             <input
-              onChange={event => setAValue(event.target.value)}
+              onChange={event => fork('a', event.target.value)}
               type="range"
               min="0"
               max="1"
@@ -108,5 +122,3 @@ export default function Colors() {
     </Jumbotron>
   )
 }
-
-// `hsla(${Math.abs(hValue - 180)},${Math.abs(sValue - 50)},${Math.abs(lValue - 50)}),1`
