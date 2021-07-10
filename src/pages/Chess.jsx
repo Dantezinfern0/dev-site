@@ -1,10 +1,15 @@
 import React, {useState} from 'react'
 import Spinner from 'react-spinkit';
+import {
+    Container,
+    Jumbotron
+} from 'reactstrap';
 
 const Chess = () => {
     const [loadingPuzzle, setLoadingPuzzle] = useState(true)
     const [loadingTv, setLoadingTv] = useState(true)
-    return (
+    return (<Jumbotron>
+        <Container>
         <div className="chess-container">
             <h1>Daily Chess Puzzle</h1>
             <div>
@@ -43,6 +48,8 @@ const Chess = () => {
                 ></iframe>
             </div>
         </div>
+        </Container>
+        </Jumbotron>
     )
 }
 export default Chess

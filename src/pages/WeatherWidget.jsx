@@ -2,6 +2,10 @@
 import React, { Component } from 'react'
 import Moment from 'react-moment'
 import '../styles/widget.css'
+import {
+  Container,
+  Jumbotron
+} from 'reactstrap'
 
 const key = "770d3167b3eba3b1c6578ba7c1153c3b"
 const url = "https://api.openweathermap.org/data/2.5/onecall"
@@ -115,7 +119,8 @@ const indicate = {
 
 render() {
   return (
-    <div>
+    <Jumbotron>
+      <Container>
    <div className="center-flex" style={{backgroundImage: `url(${this.photo()})`}}>
     <section>
     <h1>Current Weather</h1>
@@ -141,5 +146,6 @@ render() {
   </section>
   <p className="color-ivory">Widget by Dante Harasz</p>
 </div>
-</div>)
+</Container>
+</Jumbotron>)
 }}

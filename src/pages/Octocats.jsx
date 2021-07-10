@@ -1,5 +1,10 @@
 import React, { Component } from 'react'
 import CatCharacter from '../components/CatCharacter'
+import {
+  Container,
+  Jumbotron
+} from 'reactstrap';
+
 class Octocats extends Component {
   constructor(props) {
     super(props)
@@ -23,7 +28,8 @@ class Octocats extends Component {
   render() {
     console.log('rendered')
     return (
-          <div>
+          <Jumbotron>
+            <Container>
             <ul className="main-body">
               {this.state.dataList.map(character => {
                 return (
@@ -37,7 +43,8 @@ class Octocats extends Component {
                 )
               })}
             </ul>
-          </div>
+            </Container>
+          </Jumbotron>
     )
   }
 }
