@@ -39,8 +39,7 @@ const TipCalc = () => {
         return () => {
             document.removeEventListener("keyup", input);
           };
-},[]);
-    })
+},[]);})
     return <Jumbotron>
         <Container>
             <Col>
