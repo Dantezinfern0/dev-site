@@ -30,7 +30,7 @@
     "stylelint-config-standard": "^22.0.0"
   },
   "dependencies": {
-    "bootstrap": "^5.0.1",
+    "bootstrap": "^5.1.0",
     "caniuse-lite": "^1.0.30001239",
     "json": "^11.0.0",
     "moment": "^2.25.3",
