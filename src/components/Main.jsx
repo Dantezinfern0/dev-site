@@ -11,8 +11,6 @@ const Main = () => {
     <Jumbotron>
         <Container>
             <Col>
-                <h1>About Dante</h1>
-                <p>Web Design, UI, UX, Full Stack Developer</p>
                 <h2>List of my services</h2>
                 <ul>
                     <li>Web development</li>
