@@ -32,18 +32,18 @@ const Dante = () => {
                                     <br />
                                     <Github  />
                                     <EmailMe />
-                                    <Row>
-                                        <img src={Certificate} alt="Web Development Certification" />
-                                        <img src={Degree} alt="Diploma for Bachelor of Science in Psychology" />
-                                    </Row>
                                 </p>
+                                <Row>
+                                    <img className="border-rounded" src={Certificate} alt="Web Development Certification" />
+                                    <img className="border-rounded" src={Degree} alt="Diploma for Bachelor of Science in Psychology" />
+                                </Row>
                             </Col>
                             <Col>
                                 <img id="aDante" src={DantePortrait} alt="cartoon avatar of dante" />
                                 <img src={Shopify} alt="Shopify Partner Logo"/>
+                                {logos.map((logo, i) => {return <img className="icon-img" key={i} src={logo.src} alt={logo.altText} />})}
                             </Col>
                         </Row>
-                                {logos.map((logo, i) => {return <img className="icon-img" key={i} src={logo.src} alt={logo.altText} />})}
                     </Container>
                 </Jumbotron>
             </>
