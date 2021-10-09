@@ -14,7 +14,7 @@ import Certificate from '../images/certification.jpg'
 import Degree from '../images/diploma.jpg'
 
 
-const description = "In 2019 Dante attended code school at Suncoast Developer's guild in St Petersburg, FL.  Since then he has been freelancing and contributing to open source project Lichess.org"
+const description = "In 2019 Dante attended code school at Suncoast Developer's guild in St Petersburg, FL. Since then he has been freelancing, building shopify stores, extending their reach and integrating their previous content and shop items with data migration."
 
 
 
