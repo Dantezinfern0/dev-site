@@ -19,6 +19,10 @@ const Friends = [
         url: "https://hearcorp.com/",
         author: "Hear Corp",
         title: "An Event Technology Company"
+    },{
+        url: "https://bio.link/alignedalchemy",
+        author: "Aligned Alchemy",
+        title: "Musical Duo Diana and Dante"
     }
 ]
 export default Friends
