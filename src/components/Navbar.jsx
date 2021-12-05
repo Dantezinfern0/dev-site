@@ -36,6 +36,9 @@ import {
                                 <NavLink className="button-bump" href="/dante">Dante</NavLink>
                             </NavItem>
                             <NavItem>
+                                <NavLink className="button-bump" href="/stream">TwitchStream</NavLink>
+                            </NavItem>
+                            <NavItem>
                                 <NavLink className="button-bump" href="/projects">Projects</NavLink>
                             </NavItem>
                             <NavItem>
