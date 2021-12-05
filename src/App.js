@@ -3,6 +3,10 @@ import Navigator from './components/Navbar'
 import Footer from './components/Footer'
 import HomePage from './pages/HomePage'
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import {
+    Container,
+    Jumbotron
+} from 'reactstrap';
 import Dante from './pages/Dante'
 import Rotator from './components/Rotator'
 import TipCalc from './pages/TipCalc'
@@ -16,7 +20,10 @@ import Stream from './pages/Stream'
 class App extends Component {
     render() {
         return (
-            <div><BrowserRouter>
+                <div className="center-it">
+            <Jumbotron>
+                <Container>
+                    <BrowserRouter>
                 <Navigator />
                     <Switch>
                         <Route exact path="/" component={HomePage}></Route>
@@ -32,6 +39,8 @@ class App extends Component {
                     </Switch>
                 </BrowserRouter>
                 <Footer />
+                </Container>
+                </Jumbotron>
             </div>
         );
     }
