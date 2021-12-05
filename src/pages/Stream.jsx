@@ -8,7 +8,7 @@ const Stream = () => {
     return (
         <Jumbotron>
             <Container>
-            <iframe src="https://player.twitch.tv/?channel=alignedalchemy&parent=www.danteharasz.dev" 
+            <iframe src="https://player.twitch.tv/?channel=alignedalchemy&parent=danteharasz.dev" 
             frameBorder="0" 
             allowFullscreen="true" 
             scrolling="no" 
