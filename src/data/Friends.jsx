@@ -4,13 +4,9 @@ const Friends = [
         author: "Diana Morgan",
         title: "Author/Artist"
     },{
-        url: "https://www.instagram.com/johnmauricemuldoon",
+        url: "https://www.johnmauricemuldoon.com",
         author: "John Maurice Muldoon",
-        title: "Street Artist/Red Fish Bowl Studios"
-    },{
-        url: "http://www.normscyclecenter.com/",
-        author: "Norm's Cycle Center",
-        title: "Cycle Repairs - Inspections - Reconstructions - Parts"
+        title: "Pittsburgh Artist, Red Fish Bowl Studios"
     },{
         url: "https://suncoast.io",
         author: "Suncoast Developer's Guild",

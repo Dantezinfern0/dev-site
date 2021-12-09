@@ -1,6 +1,6 @@
 import movies from '../images/movie.png'
 import mineSweeper from '../images/mine-sweeper.png'
-import OctoCat from '../images/octo-cat.png'
+
 
 const Projects = [
     {
