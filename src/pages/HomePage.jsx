@@ -1,7 +1,6 @@
 import React from 'react'
 import Dante from '../pages/Dante'
 import Main from '../components/Main'
-import Rotator from '../components/Rotator'
 import WeatherWidget from '../pages/WeatherWidget'
 import {
     Container,
@@ -16,7 +15,7 @@ const HomePage = () => {
             <Container>
                 <Dante />
                 <Main />
-                <Rotator />
+                
                 <WeatherWidget />
             </Container>
         </Jumbotron>

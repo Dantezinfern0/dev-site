@@ -39,7 +39,7 @@ import {
                                 <NavLink className="button-bump" href="/livestream">LiveStream</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="button-bump" href="/projects">Projects</NavLink>
+                                <NavLink className="button-bump" href="/portfolio">Portfolio</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink className="button-bump" href="/weather">Weather</NavLink>

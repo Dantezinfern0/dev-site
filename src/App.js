@@ -8,7 +8,7 @@ import {
     Jumbotron
 } from 'reactstrap';
 import Dante from './pages/Dante'
-import Rotator from './components/Rotator'
+import Portfolio from './pages/Portfolio'
 import TipCalc from './pages/TipCalc'
 import WeatherWidget from './pages/WeatherWidget'
 import Affiliates from './components/Affiliates'
@@ -30,7 +30,7 @@ class App extends Component {
                         <Route exact path="/dante" component={Dante}></Route>
                         <Route exact path="/livestream" component={Stream} ></Route>
                         <Route exact path="/affiliates" component={Affiliates}></Route>
-                        <Route exact path="/projects" component={Rotator}></Route>
+                        <Route exact path="/portfolio" component={Portfolio}></Route>
                         <Route exact path="/weather" component={WeatherWidget}></Route>
                         <Route exact path="/tipcalc" component={TipCalc}></Route>
                         <Route exact path="/chess" component={Chess}></Route>
