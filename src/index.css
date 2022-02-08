@@ -88,9 +88,16 @@ footer {
   font-weight: bold;
   font-size: 16px;
 }
+.center-it {
+  display: flex;
+  justify-content: center;
+}
 .name-pic img {
   height: 28px;
   width: 28px;
   border-radius: 3px;
   margin-left: 10px;
+}
+.pad {
+  padding: 1rem;
 }

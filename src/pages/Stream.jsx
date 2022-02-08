@@ -10,12 +10,13 @@ const Stream = () => {
         <Jumbotron>
             <Container>
                 <Col>
+                <div className="pad center-it">
                     <iframe src="https://player.twitch.tv/?channel=alignedalchemy&parent=danteharasz.dev" 
                     frameBorder="0" 
                     allowFullscreen="true" 
                     scrolling="no" 
                     height="378" 
-                    width="620"></iframe>
+                    width="620"></iframe></div>
                 </Col>
             </Container>
         </Jumbotron>

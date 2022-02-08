@@ -120,7 +120,7 @@ const indicate = {
 render() {
   return (
     <Jumbotron>
-      <Container>
+      <Container><div className="pad">
    <div className="center-flex" style={{backgroundImage: `url(${this.photo()})`}}>
     <section>
     <h1>Current Weather</h1>
@@ -145,7 +145,7 @@ render() {
     <img id="indicator" alt="#" src={this.photo()} />
   </section>
   <p className="color-ivory">Widget by Dante Harasz</p>
-</div>
+</div></div>
 </Container>
 </Jumbotron>)
 }}

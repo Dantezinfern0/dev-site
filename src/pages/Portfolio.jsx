@@ -11,15 +11,17 @@ const Portfolio = () => {
         <div>
             <Jumbotron>
                 <Container>
+                    <div className="pad">
                     <Col>
                     <h1>Shopify store with Printful.com implementation and product design</h1>
-                    <a 
+                    <div className="center-it"><a 
                         href="https://www.johnmauricemuldoon.com"
                         target="_blank"
                         rel="noopener noreferrer">
                             <img src={Muldoon} alt="screen shot of johnmauricemuldoon.com" width="800" height="600"  />
-                    </a>
+                    </a></div>
                     </Col>
+                    </div>
                 </Container>
             </Jumbotron>
         </div>
