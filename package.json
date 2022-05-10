@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.0.1",
-    "caniuse-lite": "^1.0.30001239",
+    "caniuse-lite": "^1.0.30001338",
     "json": "^11.0.0",
     "moment": "^2.25.3",
     "react": "^16.13.1",
