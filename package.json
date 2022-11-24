@@ -25,7 +25,7 @@
     "useTabs": false
   },
   "devDependencies": {
-    "prettier": "^2.3.0",
+    "prettier": "^2.8.0",
     "stylelint": "^13.3.1",
     "stylelint-config-standard": "^22.0.0"
   },
